@@ -1,0 +1,34 @@
+body {
+    font-family: Helvetica, serif;
+    background-color: #141414;
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
+p {
+    color: #6b6b6b;
+}
+
+ul {
+    display: inline;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #57fddc;
+}
+
+.project-card {
+    border: 1px solid #57fddc;
+}
+
+.blog-card {
+    border: 1px solid #57fddc;
+}
