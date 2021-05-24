@@ -11,13 +11,20 @@ p {
     color: #6b6b6b;
 }
 
-ul {
-    display: inline;
+.logo {
+    margin-left: 3em;
+    cursor: pointer;
 }
 
-li {
+.navigation {
+    display: inline;
+    float: right;
+}
+
+.navigation-element {
     list-style: none;
     display: inline-block;
+    margin: 1em 2em 2em 0;
 }
 
 a {
