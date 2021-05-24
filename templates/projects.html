@@ -2,13 +2,11 @@
 
 {% block content %}
     <h1>Projects go here</h1>
-    <ul>
-        {% for project in object_list %}
-            <li>
-                <a href="{% url 'project details' pk=project.id %}"><h3>{{ project.name }}</h3></a>
-                <p>Used technologies: {{ project.used_technologies }}</p>
-                <p>{{ project.short_description }}</p>
-            </li>
-        {% endfor %}
-    </ul>
+    {% for project in object_list %}
+        <div class="project-card">
+            <a href="{% url 'project details' pk=project.id %}"><h3>{{ project.name }}</h3></a>
+            <p>Used technologies: {{ project.used_technologies }}</p>
+            <p>{{ project.short_description }}</p>
+        </div>
+    {% endfor %}
 {% endblock %}
