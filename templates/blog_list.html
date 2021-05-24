@@ -4,6 +4,7 @@
     <ul>
         {% for blog in object_list %}
             <li><a href="{% url 'blog post details' pk=blog.id %}"><h3>{{ blog.title }}</h3></a></li>
+            <p>{{ blog.short_description }}</p>
         {% endfor %}
     </ul>
 {% endblock %}

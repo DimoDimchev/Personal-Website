@@ -1,5 +1,6 @@
 {% extends 'shared/base.html' %}
 {% block content %}
     <h1>{{ project.name }}</h1>
+    <a href="{{ project.github }}"><h3>GitHub Repo</h3></a>
     <p>{{ project.description }}</p>
 {% endblock %}
