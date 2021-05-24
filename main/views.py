@@ -11,3 +11,7 @@ class IndexView(TemplateView):
 class ProjectsView(ListView):
     model = Project
     template_name = 'projects.html'
+
+
+class AboutView(TemplateView):
+    template_name = 'about.html'
