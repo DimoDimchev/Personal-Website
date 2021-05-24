@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView, ListView
+from django.views.generic import TemplateView, ListView, DetailView
 
 from main.models import Project
 
@@ -11,6 +11,12 @@ class IndexView(TemplateView):
 class ProjectsView(ListView):
     model = Project
     template_name = 'projects.html'
+    context_object_name = 'projects'
+
+
+class ProjectDetailView(DetailView):
+    template_name = 'project_details.html'
+    model = Project
 
 
 class AboutView(TemplateView):
