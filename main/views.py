@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView, DetailView
 
-from main.models import Project
+from main.models import Project, BlogPost
 
 
 class IndexView(TemplateView):
@@ -17,6 +17,12 @@ class ProjectsView(ListView):
 class ProjectDetailView(DetailView):
     template_name = 'project_details.html'
     model = Project
+
+
+class BlogView(ListView):
+    model = BlogPost
+    template_name = 'blog_list.html'
+    context_object_name = 'blog'
 
 
 class AboutView(TemplateView):

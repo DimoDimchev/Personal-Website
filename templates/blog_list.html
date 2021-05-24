@@ -1,0 +1,9 @@
+{% extends 'shared/base.html' %}
+{% block content %}
+    <h1> Blog is here</h1>
+    <ul>
+        {% for blog in object_list %}
+            <li><h3>{{ blog.title }}</h3></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
