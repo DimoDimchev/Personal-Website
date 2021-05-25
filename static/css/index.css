@@ -60,3 +60,17 @@ body {
         margin-top: -150px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .carousel {
+        margin-left: 3em;
+    }
+
+    .carousel .subtitle {
+        letter-spacing: 3px;
+    }
+
+    .carousel-element {
+        margin-left: 25px;
+    }
+}
