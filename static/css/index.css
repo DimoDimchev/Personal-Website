@@ -1,0 +1,62 @@
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    height: 45px;
+    margin-left: 6em;
+    margin-top: 1em;
+}
+
+.carousel .subtitle {
+    letter-spacing: 5px;
+}
+
+.carousel-element {
+    padding: 0 10px;
+    height: 25px;
+    margin-bottom: 25px;
+    margin-left: 45px;
+    display: block;
+}
+
+.flip4 {
+    animation: flip4 7s cubic-bezier(0.23, 1, 1, 1.2) infinite;
+    padding-top: 0.03em;
+}
+
+@keyframes flip4 {
+    0% {
+        margin-top: -200px;
+    }
+    5% {
+        margin-top: -150px;
+    }
+    25% {
+        margin-top: -150px;
+    }
+    30% {
+        margin-top: -100px;
+    }
+    50% {
+        margin-top: -100px;
+    }
+    55% {
+        margin-top: -50px;
+    }
+    75% {
+        margin-top: -50px;
+    }
+    80% {
+        margin-top: -200px;
+    }
+    99.99% {
+        margin-top: -200px;
+    }
+    100% {
+        margin-top: -150px;
+    }
+}

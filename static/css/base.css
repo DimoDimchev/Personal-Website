@@ -16,6 +16,10 @@ a {
     color: #57fddc;
 }
 
+header {
+    text-align: left;
+}
+
 .logo {
     margin-left: 3em;
     cursor: pointer;
@@ -43,8 +47,10 @@ a {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: lighter;
-    font-size: 4em;
-    letter-spacing: 15px;
+    font-size: 3em;
+    letter-spacing: 10px;
+    text-align: left;
+    margin: 3em 2em 0 2em;
 }
 
 .subtitle {

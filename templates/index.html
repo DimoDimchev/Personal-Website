@@ -1,8 +1,20 @@
 {% extends 'shared/base.html' %}
-
+{% load static %}
+{% block head_content %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
 {% block content %}
-    <header class="text-center">
-        <h1 class="title">Dimo Dimchev</h1>
-        <p class="subtitle">Software and Web Developer</p>
+    <header>
+        <h1 class="title">Hello, my name is Dimo Dimchev</h1>
+        <div class="carousel">
+            <!-- Use classes 2,3, or 4 to match the number of words -->
+            <p class="subtitle">I am a </p>
+            <ul class="flip4">
+                <li class="carousel-element"><p class="subtitle">Software Developer</p></li>
+                <li class="carousel-element"><p class="subtitle">Web Developer</p></li>
+                <li class="carousel-element"><p class="subtitle">Student</p></li>
+                <li class="carousel-element"><p class="subtitle">Perfectionist</p></li>
+            </ul>
+        </div>
     </header>
 {% endblock %}
