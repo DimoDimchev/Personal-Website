@@ -1,3 +1,22 @@
+<nav role="navigation">
+    <div id="menuToggle">
+
+        <input type="checkbox"/>
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+
+        <ul id="menu">
+            <li class="hamburger-element bar"><a href="{% url 'index' %}">Home</a></li>
+            <li class="hamburger-element bar"><a href="{% url 'projects' %}">Projects</a></li>
+            <li class="hamburger-element bar"><a href="{% url 'blog' %}">Blog</a></li>
+            <li class="hamburger-element bar"><a href="{% url 'about' %}">About</a></li>
+        </ul>
+    </div>
+</nav>
+
 <nav>
     <ul class="navigation">
         <li class="navigation-element bar"><a href="{% url 'index' %}">Home</a></li>
