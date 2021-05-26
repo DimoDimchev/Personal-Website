@@ -5,14 +5,17 @@
 {% endblock %}
 {% block content %}
     <header>
-        <h1 class="title">Projects go here</h1>
-        <p class="subtitle"></p>
+        <h1 class="title projects-title">Projects go here</h1>
+        <p class="subtitle projects-subtitle">This is a showcase of some of my favourite and most interesting projects.
+            You will find information on the technologies I've used for each project</p>
     </header>
-    {% for project in object_list %}
-        <div class="project-card">
-            <a href="{% url 'project details' pk=project.id %}"><h3>{{ project.name }}</h3></a>
-            <p>Used technologies: {{ project.used_technologies }}</p>
-            <p>{{ project.short_description }}</p>
-        </div>
-    {% endfor %}
+    <div class="cards">
+        {% for project in object_list %}
+            <div class="project-card">
+                <a href="{% url 'project details' pk=project.id %}"><h3>{{ project.name }}</h3></a>
+                <p>Used technologies: {{ project.used_technologies }}</p>
+                <p>{{ project.short_description }}</p>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
