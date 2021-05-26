@@ -15,6 +15,10 @@ body {
     letter-spacing: 5px;
 }
 
+.carousel .carousel-element .subtitle {
+        color: #57fddc;
+}
+
 .carousel-element {
     padding: 0 10px;
     height: 25px;
