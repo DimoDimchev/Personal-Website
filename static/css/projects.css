@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 
 .projects-title {
     margin-top: 1.5em;
@@ -15,18 +18,47 @@
     margin-left: 6em;
     margin-right: 6em;
     margin-top: 3em;
+    margin-bottom: 6em;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
+    justify-content: space-evenly;
+    /*align-content: flex-start;*/
 }
 
 .project-card {
-    border: 1px solid #57fddc;
-    flex: 30%;
+    /*flex: 30%;*/
+    width: 340px;
+    height: 320px;
     margin-top: 3em;
     margin-right: 2em;
+    color: #141414;
+    background-color: #ededed;
+}
+
+.card-text {
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 100;
+    margin: 0;
+    background-color: #ededed;
+    position: relative;
+}
+
+.project-title {
+    color: #141414;
+    margin: 0;
+}
+
+.thumbnail {
+    width: 340px;
+    height: 200px;
+    margin: 0;
     padding: 0;
+    z-index: -1;
+}
+
+.card-description {
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -40,16 +72,21 @@
     }
 
     .cards {
-        margin-left: 3em;
-        margin-right: 3em;
-        margin-top: 3em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
         flex-direction: column;
     }
 
     .project-card {
-        border: 1px solid #57fddc;
-        flex: 30%;
-        margin-top: 1em;
-        margin-right: 0;
+        width: 340px;
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 7em;
+    }
+
+    .card-text {
+        height: 80px;
     }
 }
