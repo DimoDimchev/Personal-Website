@@ -9,7 +9,7 @@
         <a href="{{ project.github }}"><i class="fa fa-github fa-3x repo-link" aria-hidden="true"></i></a>
     </header>
     <div class="project-details-description">
-        <p>{{ project.description }}</p>
+        <p>{{ project.description|linebreaks }}</p>
     </div>
     <div class="project-details-technologies">
         <h3 class="subtitle">Used technologies:</h3>
