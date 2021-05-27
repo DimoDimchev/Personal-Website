@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dimo Dimchev</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="https://kit.fontawesome.com/c9ea60dbf3.js" crossorigin="anonymous"></script>
     {% block head_content %}
     {% endblock %}
 </head>
 <body>
-    {% include 'partials/navbar.html' %}
-    {% include 'partials/logo.html' %}
-    {% block content %}
-    {% endblock %}
+{% include 'partials/navbar.html' %}
+{% include 'partials/logo.html' %}
+{% block content %}
+{% endblock %}
 </body>
 </html>

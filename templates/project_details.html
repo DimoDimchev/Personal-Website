@@ -1,6 +1,18 @@
 {% extends 'shared/base.html' %}
+{% load static %}
+{% block head_content %}
+    <link rel="stylesheet" href="{% static 'css/project_details.css' %}">
+{% endblock %}
 {% block content %}
-    <h1>{{ project.name }}</h1>
-    <a href="{{ project.github }}"><h3>GitHub Repo</h3></a>
-    <p>{{ project.description }}</p>
+    <header class="project-details-header">
+        <h1 class="title project-details-title">{{ project.name }}</h1>
+        <a href="{{ project.github }}"><i class="fa fa-github fa-3x repo-link" aria-hidden="true"></i></a>
+    </header>
+    <div class="project-details-description">
+        <p>{{ project.description }}</p>
+    </div>
+    <div class="project-details-technologies">
+        <h3 class="subtitle">Used technologies:</h3>
+        <p>{{ project.used_technologies }}</p>
+    </div>
 {% endblock %}
