@@ -163,6 +163,7 @@ body {
     }
 
     .card-text {
+        margin-top: 0;
         height: 80px;
     }
 
