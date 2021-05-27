@@ -16,7 +16,7 @@ body {
 }
 
 .carousel .carousel-element .subtitle {
-        color: #57fddc;
+    color: #57fddc;
 }
 
 .carousel-element {
@@ -25,6 +25,32 @@ body {
     margin-bottom: 25px;
     margin-left: 45px;
     display: block;
+}
+
+.buttons {
+    margin-left: 6em;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.cta {
+    margin-right: 3em;
+    transition: color 0.3s ease;
+}
+
+.primary-cta {
+    color: #57fddc;
+}
+
+.secondary-cta {
+    color: #ffffff;
+}
+
+.cta:hover {
+    color: #6b6b6b;
 }
 
 .flip4 {
@@ -76,5 +102,11 @@ body {
 
     .carousel-element {
         margin-left: 25px;
+    }
+
+    .buttons {
+        margin-left: 3em;
+        margin-top: 3em;
+        flex-direction: column;
     }
 }
