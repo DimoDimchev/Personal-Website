@@ -1,9 +1,10 @@
 from django.db import models
+from cloudinary import models as cloudinary_models
 
 
 class Project(models.Model):
     name = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='public/thumbnails')
+    image = cloudinary_models.CloudinaryField('image')
     github = models.CharField(max_length=300)
     used_technologies = models.CharField(max_length=500)
     short_description = models.TextField()
