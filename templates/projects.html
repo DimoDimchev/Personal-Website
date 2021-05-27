@@ -5,28 +5,11 @@
 {% endblock %}
 {% block content %}
     <header>
-        <h1 class="title projects-title">Projects go here</h1>
+        <h1 class="title projects-title">Projects</h1>
         <p class="subtitle projects-subtitle">This is a showcase of some of my favourite and most interesting projects.
             You will find information on the technologies I've used for each project</p>
     </header>
     <div class="cards">
-        {#        {% for project in object_list %}#}
-        {#            <div class="project-card flip-card">#}
-        {#                <div class="flip-card-inner">#}
-        {#                    <div class="flip-card-front">#}
-        {#                        <img class="thumbnail" src="{{ project.image.url }}" alt="Project thumbnail">#}
-        {#                        <div class="card-text">#}
-        {#                            <a href="{% url 'project details' pk=project.id %}"><h3#}
-        {#                                    class="project-title">{{ project.name }}</h3></a>#}
-        {#                            <p>Used technologies: {{ project.used_technologies }}</p>#}
-        {#                        </div>#}
-        {#                    </div>#}
-        {#                    <div class="flip-card-back">#}
-        {#                        <p class="card-description">{{ project.short_description }}</p>#}
-        {#                    </div>#}
-        {#                </div>#}
-        {#            </div>#}
-        {#        {% endfor %}#}
         {% for project in object_list %}
             <div class="flip-card">
                 <div class="flip-card-inner">
@@ -40,7 +23,7 @@
                     <div class="flip-card-back">
                         <p class="card-description">{{ project.short_description }}</p>
                         <div class="card-text back">
-                            <a href="{% url "project details" pk=project.id %}"></a><h3>Read more</h3>
+                            <a href="{% url "project details" pk=project.id %}"><h3>Read more</h3></a>
                         </div>
                     </div>
                 </div>
