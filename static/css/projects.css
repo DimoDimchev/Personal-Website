@@ -157,9 +157,7 @@ body {
     .project-card {
         width: 340px;
         height: 200px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 7em;
+        margin: 7em auto 2em;
     }
 
     .card-text {
