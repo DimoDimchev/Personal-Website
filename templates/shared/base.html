@@ -7,6 +7,20 @@
     <title>Dimo Dimchev</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <script src="https://kit.fontawesome.com/c9ea60dbf3.js" crossorigin="anonymous"></script>
+    {#  Google Analytics stuff  #}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-789N0WLW3T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-789N0WLW3T');
+    </script>
     {% block head_content %}
     {% endblock %}
 </head>
