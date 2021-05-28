@@ -49,6 +49,10 @@ a:hover {
     margin: 4em 8em 0 8em;
 }
 
+.introduction {
+    margin-top: 1em;
+}
+
 @media only screen and (max-width: 600px) {
     .about-title {
         text-align: left;
@@ -68,7 +72,6 @@ a:hover {
     }
 
     .introduction {
-        margin-top: 1em;
         margin-right: 3em;
     }
 
