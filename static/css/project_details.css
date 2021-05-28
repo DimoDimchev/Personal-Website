@@ -11,6 +11,7 @@
 .repo-link {
     color: #ffffff;
     transition: color 0.3s ease;
+    margin-right: 1em;
 }
 
 .project-details-description {
@@ -53,7 +54,7 @@
     }
 
     .project-details-title {
-        font-size: 1.5em;
+        font-size: 1.3em;
         text-align: left;
     }
 
