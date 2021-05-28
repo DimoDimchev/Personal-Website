@@ -166,7 +166,9 @@ body {
     }
 
     .flip-card {
-        margin-left: auto;
+        margin-top: 3em;
         margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10em;
     }
 }
