@@ -1,4 +1,36 @@
 {% extends 'shared/base.html' %}
+{% load static %}
+{% block head_content %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
 {% block content %}
-    <p>Hi, my name is Dimo, I am a developer, blah blah</p>
+    <header class="about-header">
+        <h1 class="title about-title">About me</h1>
+    </header>
+    <div class="container contact">
+        <h2>Contact me here:</h2>
+        <ul>
+            <li>Email: <p class="cta primary-cta about-cta">ddimchev7@gmail.com</p></li>
+            <li>Github: <p class="ct primary-cta about-cta"><a href="https://github.com/DimoDimchev">Dimo Dimchev</a></p></li>
+            <li>LinkedIn: <p class="primary-cta about-cta"><a href="https://www.linkedin.com/in/dimodimchev/">Dimo Dimchev</a></p></li>
+        </ul>
+    </div>
+    <div class="container introduction">
+        <h2>A small introduction</h2>
+        <p>My name is Dimo Dimchev and I am from Bulgaria. I'm currently in the 11th grade in high-school and will be graduating next year.
+            Apart from school I also attend the Software University of Sofia where I study Software and Web development.<br><br>
+            My interest in computer science and programming was born in the 8th grade when I studied Informatics for the first time in my life.
+            As soon as I started studying that subject I knew that I would pursue a career in the IT field. I was fascinated(and still am) by
+            all the possibilities that one has behind the computer screen, and so mu journey began.<br><br>
+            At the beginning I had no idea what I was doing. Just like any other beginner I wanted to start making projects right away and skipped
+            a major part of the necessary fundamentals(which I would later regret). For a couple of years I fiddled around with Front-End development
+            but I felt that I no longer was interested in programming so I stopped doing it for a year.<br><br>
+            In late 2020 I fell in love with programming and computer science once again and this time I decided to do things the right way.
+            I enrolled in the Software University of Sofia and paid attention to every piece of information that was fed to me. For just under
+            6 months I managed to go through more than 400 coding problems and watched all the learning materials from the university program(this
+            usually takes more than 2 years) and even managed to complete a short interview at a local company.<br><br>
+            Currently I am trying to find a summer internship or even my first time job as a Software/Web developer and am looking forward to all
+            the challenges I will face in this difficult field.
+        </p>
+    </div>
 {% endblock %}

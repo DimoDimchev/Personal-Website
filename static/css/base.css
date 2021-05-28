@@ -29,6 +29,23 @@ header {
     cursor: pointer;
 }
 
+.cta {
+    margin-right: 3em;
+    transition: color 0.3s ease;
+}
+
+.primary-cta {
+    color: #57fddc;
+}
+
+.secondary-cta {
+    color: #ffffff;
+}
+
+.cta:hover {
+    color: #6b6b6b;
+}
+
 .navigation {
     display: inline;
     float: right;
