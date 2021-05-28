@@ -25,9 +25,18 @@
     {% endblock %}
 </head>
 <body>
-{% include 'partials/navbar.html' %}
-{% include 'partials/logo.html' %}
-{% block content %}
-{% endblock %}
+<div class="page-container">
+    <div class="content-wrap">
+        {% include 'partials/navbar.html' %}
+        {% include 'partials/logo.html' %}
+        {% block content %}
+        {% endblock %}
+    </div>
+    {% include 'partials/footer.html' %}
+</div>
+<script>
+    let yearP = document.getElementsByClassName('year')[0];
+    yearP.innerHTML = new Date().getFullYear();
+</script>
 </body>
 </html>
