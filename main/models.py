@@ -8,7 +8,7 @@ class Project(models.Model):
     github = models.CharField(max_length=300)
     website = models.CharField(max_length=300, blank=True)
     used_technologies = models.CharField(max_length=500)
-    short_description = models.TextField()
+    short_description = models.TextField(max_length=180)
     description = models.TextField()
 
     def __str__(self):
