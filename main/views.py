@@ -21,8 +21,9 @@ class ProjectDetailView(DetailView):
 
 class BlogView(ListView):
     model = BlogPost
-    template_name = 'blog_list.html'
+    template_name = 'blog.html'
     context_object_name = 'blog'
+    ordering = ['-date']
 
 
 class BlogDetailView(DetailView):

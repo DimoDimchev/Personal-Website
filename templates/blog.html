@@ -1,0 +1,22 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block head_content %}
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
+{% block content %}
+    <header>
+        <h1 class="title blog-title">Blog</h1>
+        <p class="subtitle blog-subtitle">Welcome to my blog. Here I will post updates about me and the projects I'm
+            working on.</p>
+    </header>
+    <div class="blog-cards">
+        {% for blog in object_list %}
+            <a href="{% url 'blog post details' pk=blog.id %}">
+                <div class="blog-card">
+                    <h3 class="blog-card-title">{{ blog.title }}</h3>
+                    <p>{{ blog.short_description }}</p>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}
