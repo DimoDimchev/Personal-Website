@@ -27,6 +27,23 @@ body {
     display: block;
 }
 
+.cta {
+    margin-right: 3em;
+    transition: color 0.3s ease;
+}
+
+.primary-cta {
+    color: #57fddc;
+}
+
+.secondary-cta {
+    color: #ffffff;
+}
+
+.cta:hover {
+    color: #6b6b6b;
+}
+
 .buttons {
     margin-left: 6em;
     margin-top: 5em;
