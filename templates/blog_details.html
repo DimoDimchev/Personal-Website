@@ -1,6 +1,14 @@
 {% extends 'shared/base.html' %}
+{% load static %}
+{% block head_content %}
+    <link rel="stylesheet" href="{% static 'css/blog_details.css' %}">
+{% endblock %}
 {% block content %}
-    <h1>{{ blogpost.title }}</h1>
-    <h4>{{ blogpost.date }}</h4>
-    <p>{{ blogpost.content }}</p>
+    <header class="blog-post-header">
+        <h1 class="title blog-post-title">{{ blogpost.title }}</h1>
+        <p class="subtitle blog-post-date">{{ blogpost.date }}</p>
+    </header>
+    <div class="blog-post-content">
+        <p class="blog-post-p">{{ blogpost.content | linebreaks }}</p>
+    </div>
 {% endblock %}

@@ -1,0 +1,41 @@
+.blog-post-header {
+    text-align: center;
+}
+
+.blog-post-title {
+    margin-top: 2em;
+    margin-bottom: 0.3em;
+    text-align: center;
+}
+
+.blog-post-content {
+    text-align: left;
+    margin-top: 3em;
+    margin-left: 8em;
+    margin-right: 8em;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .blog-post-header {
+        margin-top: 8em;
+        margin-left: 2em;
+        margin-right: -3em;
+        text-align: left;
+    }
+
+    .blog-post-title {
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    .blog-post-date {
+        margin-left: 1.5em;
+    }
+
+    .blog-post-content {
+        margin-left: 3.5em;
+        margin-right: 3em;
+    }
+}
