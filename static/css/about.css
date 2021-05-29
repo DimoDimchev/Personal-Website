@@ -49,6 +49,10 @@ a:hover {
     margin: 4em 8em 0 8em;
 }
 
+.stack {
+    padding-bottom: 4em;
+}
+
 .introduction {
     margin-top: 1em;
 }
