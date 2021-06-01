@@ -112,9 +112,7 @@ body {
     }
 
     .flip-card {
-        margin-top: 3em;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 3em auto 2em;
     }
 
     .flip-card:hover .flip-card-inner{
