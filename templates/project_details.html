@@ -11,11 +11,11 @@
             <a href="{{ project.website }}"><i class="fa fa-chrome fa-3x repo-link" aria-hidden="true"></i></a>
         {% endif %}
     </header>
-    <div class="project-details-description">
-        <p>{{ project.description|linebreaks }}</p>
-    </div>
     <div class="project-details-technologies">
         <h3 class="subtitle">Used technologies:</h3>
         <p>{{ project.used_technologies }}</p>
+    </div>
+    <div class="project-details-description">
+        <p>{{ project.description|linebreaks }}</p>
     </div>
 {% endblock %}
