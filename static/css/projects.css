@@ -117,7 +117,7 @@ body {
         margin-left: auto;
     }
 
-    .flip-card:hover {
-        pointer-events: none;
+    .flip-card:hover .flip-card-inner{
+        transform: scale(1.1);
     }
 }
