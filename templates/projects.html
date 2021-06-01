@@ -11,23 +11,18 @@
     </header>
     <div class="cards">
         {% for project in object_list %}
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="thumbnail" src="{{ project.image.url }}" alt="project thumbnail">
-                        <div class="card-text">
+            <a href="{% url 'project details' pk=project.id %}">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
                             <h3 class="project-title">{{ project.name }}</h3>
-                            <p class="project-technologies">Used technologies: {{ project.used_technologies }}</p>
                         </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="card-description">{{ project.short_description }}</p>
-                        <div class="card-text back">
-                            <a href="{% url "project details" pk=project.id %}"><h3>Read more</h3></a>
+                        <div class="flip-card-back">
+                            <p class="card-description">{{ project.short_description }}</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         {% endfor %}
     </div>
 {% endblock %}
