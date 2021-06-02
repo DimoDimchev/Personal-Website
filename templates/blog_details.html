@@ -1,7 +1,8 @@
 {% extends 'shared/base.html' %}
 {% load static %}
 {% block head_content %}
-    <title>A Dimo Dimchev Blog Post</title>
+    <title>{{ blogpost.title }}: A Dimo Dimchev Post</title>
+    <meta name="description" content="This is Dimo Dimchev's {{ blogpost.title }} blog post"/>
     <link rel="stylesheet" href="{% static 'css/blog_details.css' %}">
 {% endblock %}
 {% block content %}

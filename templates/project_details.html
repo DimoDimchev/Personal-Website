@@ -1,7 +1,8 @@
 {% extends 'shared/base.html' %}
 {% load static %}
 {% block head_content %}
-    <title>A Dimo Dimchev Project</title>
+    <title>{{ project.name }}A Dimo Dimchev Project</title>
+    <meta name="description" content="This is Dimo Dimchev's {{ project.name }} project. {{ project.short_description }}"/>
     <link rel="stylesheet" href="{% static 'css/project_details.css' %}">
 {% endblock %}
 {% block content %}
