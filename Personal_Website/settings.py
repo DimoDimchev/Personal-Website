@@ -19,7 +19,13 @@ DEBUG = (os.environ.get('DEBUG')) == 'True'
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'personal-site-dimo.herokuapp.com',
-    'dimodimchev.com',
+    'dimodimchev.me',
+    'www.dimodimchev.me',
+    'http://www.dimodimchev.me',
+    'https://www.dimodimchev.me',
+    'http://dimodimchev.me',
+    'https://dimodimchev.me',
+
 ]
 
 # Application definition
@@ -134,7 +140,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = join(BASE_DIR, 'media')
 
 cloudinary.config(
-  cloud_name = "hs0rt46sy",
-  api_key = "698723282754858",
-  api_secret = "_oOwfZ9peoitNx-pLiOKARHCAwg"
+    cloud_name="hs0rt46sy",
+    api_key="698723282754858",
+    api_secret="_oOwfZ9peoitNx-pLiOKARHCAwg"
 )
