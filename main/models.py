@@ -8,6 +8,7 @@ class Project(models.Model):
     website = models.CharField(max_length=300, blank=True)
     used_technologies = models.CharField(max_length=500)
     description = models.TextField()
+    short_description = models.CharField(max_length=180)
 
     def __str__(self):
         return self.name
