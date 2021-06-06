@@ -1,6 +1,6 @@
 from django.contrib.sitemaps.views import sitemap
 from django.urls import path
-from main.sitemaps import blog_dict, StaticViewSitemap
+from main.sitemaps import blog_dict, StaticViewSitemap, project_dict
 from django.contrib.sitemaps import GenericSitemap
 
 
@@ -8,6 +8,7 @@ from main.views import IndexView, ProjectsView, AboutView, ProjectDetailView, Bl
 
 sitemaps = {
     'blog': GenericSitemap(blog_dict, priority=0.5),
+    'projects': GenericSitemap(project_dict, priority=0.5),
     'static': StaticViewSitemap,
 }
 

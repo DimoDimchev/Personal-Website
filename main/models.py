@@ -15,7 +15,7 @@ class Project(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('blog post details', kwargs={'pk': self.pk})
+        return reverse('project details', kwargs={'pk': self.pk})
 
 
 class BlogPost(models.Model):
@@ -25,7 +25,7 @@ class BlogPost(models.Model):
     date = models.DateField(auto_now=True)
 
     def get_absolute_url(self):
-        return reverse('project details', kwargs={'pk': self.pk})
+        return reverse('blog post details', kwargs={'pk': self.pk})
 
     def __str__(self):
         return self.title
