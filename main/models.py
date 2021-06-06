@@ -1,5 +1,6 @@
 from django.db import models
 from cloudinary import models as cloudinary_models
+from django.urls import reverse
 
 
 class Project(models.Model):
@@ -13,12 +14,18 @@ class Project(models.Model):
     def __str__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('blog post details', kwargs={'pk': self.pk})
+
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=100)
     short_description = models.TextField()
     content = models.TextField()
     date = models.DateField(auto_now=True)
+
+    def get_absolute_url(self):
+        return reverse('project details', kwargs={'pk': self.pk})
 
     def __str__(self):
         return self.title
