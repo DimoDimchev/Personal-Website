@@ -1,5 +1,8 @@
 from django.contrib.sitemaps.views import sitemap
+from django.contrib.staticfiles.storage import staticfiles_storage
 from django.urls import path
+from django.views.generic import RedirectView
+
 from main.sitemaps import blog_dict, StaticViewSitemap, project_dict
 from django.contrib.sitemaps import GenericSitemap
 
@@ -21,5 +24,9 @@ urlpatterns = [
     path('about/', AboutView.as_view(), name='about'),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
          name='django.contrib.sitemaps.views.sitemap'),
+    path(
+        "favicon.ico",
+        RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),
+    ),
 ]
 
