@@ -5,6 +5,7 @@ from django.urls import reverse
 
 class Project(models.Model):
     name = models.CharField(max_length=100)
+    date = models.DateField(auto_now=True)
     github = models.CharField(max_length=300)
     website = models.CharField(max_length=300, blank=True)
     used_technologies = models.CharField(max_length=500)
