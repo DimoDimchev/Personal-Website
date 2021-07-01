@@ -1,5 +1,4 @@
 from django.db import models
-from cloudinary import models as cloudinary_models
 from django.urls import reverse
 
 
