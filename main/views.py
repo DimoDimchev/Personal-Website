@@ -12,6 +12,7 @@ class ProjectsView(ListView):
     model = Project
     template_name = 'projects.html'
     context_object_name = 'projects'
+    ordering = ['-date']
 
 
 class ProjectDetailView(DetailView):
