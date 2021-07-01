@@ -1,10 +1,10 @@
 from django.db import models
-from cloudinary import models as cloudinary_models
 from django.urls import reverse
 
 
 class Project(models.Model):
     name = models.CharField(max_length=100)
+    date = models.DateField(auto_now=True)
     github = models.CharField(max_length=300)
     date = models.DateField(auto_now=True)
     website = models.CharField(max_length=300, blank=True)
