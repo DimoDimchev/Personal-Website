@@ -31,10 +31,16 @@
     .blog-post-title {
         font-size: 1.3em;
         text-align: left;
+        margin-left: 10vw;
+    }
+
+    .blog-post-date {
+        margin-left: 10vw;
     }
 
     .blog-post-content {
         margin-bottom: 3em;
         margin-right: 3em;
+        margin-left: 10vw;
     }
 }
