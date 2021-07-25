@@ -2,7 +2,13 @@
 {% load static %}
 {% block head_content %}
     <title>Dimo Dimchev</title>
-    <meta name="description" content="Dimo Dimchev's personal website. Here you can learn more about Dimo Dimchev, see his top projects and recent blog posts. You can also learn how to contact Dimo Dimchev"/>
+    <meta name="description"
+          content="Dimo Dimchev's personal website. Here you can learn more about Dimo Dimchev, see his top projects and recent blog posts. You can also learn how to contact Dimo Dimchev"/>
+    <meta name="title" property="og:title" content="Dimo Dimchev's Personal Website">
+    <meta property="og:type" content="website">
+    <meta name="image" property="og:image" content="https://drive.google.com/file/d/1wI0K-kEtqAwJ9YErJYoiDfvv9ysDNSiV/view?usp=sharing">
+    <meta name="description" property="og:description" content="Here you can learn more about Dimo Dimchev, see his top projects and recent blog posts. You can also learn how to contact Dimo Dimchev">
+    <meta name="author" content="Dimo Dimchev">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
 {% endblock %}
 {% block content %}
