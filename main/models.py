@@ -1,3 +1,4 @@
+from django.contrib.postgres.fields import ArrayField
 from django.db import models
 from django.urls import reverse
 
@@ -30,3 +31,8 @@ class BlogPost(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class ProfileDescription(models.Model):
+    introduction = models.TextField()
+    personal_skills = ArrayField(models.CharField(max_length=100), default=list)

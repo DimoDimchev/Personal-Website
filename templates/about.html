@@ -24,35 +24,14 @@
     </div>
     <div class="container introduction">
         <h2>A small introduction</h2>
-        <p>My name is Dimo Dimchev and I am from Bulgaria. I'm currently in the 12th grade in high-school and will be
-            graduating this school year.
-            Apart from school I also attend the Software University of Sofia where I study Software and Web development.<br><br>
-            My interest in computer science and programming came around in the 8th grade when I studied Informatics for
-            the first time in my life.
-            As soon as I started studying that subject I knew that I would pursue a career in the IT field. I was
-            fascinated(and still am) by
-            all the possibilities that one has behind the computer screen, and so my journey began.<br><br>
-            I have worked on various projects in my free time and I also like to solve coding problems.
-            I enjoy facing challenges when I work on a project and I always try to do everything the best I can.
-            Currently I am looking to start my career as a developer and can't wait to be part of an amazing team.
-        </p>
+        <p>{{ profile_description.introduction | linebreaks}}</p>
     </div>
     <div class="container contact stack">
         <h2>My tech stack:</h2>
         <ul>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>C</li>
-            <li>Django</li>
-            <li>React Native</li>
-            <li>Node JS</li>
-            <li>Express JS</li>
-            <li>HTML & CSS</li>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-            <li>Firebase</li>
-            <li>Git</li>
-
+            {% for skill in profile_description.personal_skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
         </ul>
     </div>
 {% endblock %}

@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView, ListView, DetailView
+from django.views.generic import TemplateView, ListView, DetailView, View
 
-from main.models import Project, BlogPost
+from main.models import Project, BlogPost, ProfileDescription
 
 
 class IndexView(TemplateView):
@@ -34,3 +34,8 @@ class BlogDetailView(DetailView):
 
 class AboutView(TemplateView):
     template_name = 'about.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['profile_description'] = ProfileDescription.objects.first()
+        return context
